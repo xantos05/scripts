@@ -1,10 +1,10 @@
-Script:
+**Script:
 fpm_to_newrelic.sh
 
-Description:
+**Description:
 Monitoring script for New Relic that retrieves idle, active and total number of processes from the PHP status page and sends the data to the New Relic API.
 
-Installation:
+**Installation:
 - Make sure PHP is running and the URL http://127.0.0.1/fpm-status?json is accessable and returning valid data.
 - Edit this file and enter values for the variables: API_KEY, NEW_RELIC_API_URL, HOST_NAME. The NEW_RELIC_API_URL can also be replaced by a NON-EU version: https://metric-api.newrelic.com/metric/v1
 - Create a crontab that runs every minute like: * * * * * /opt/newrelic-scripts/fpm_to_newrelic.sh > /dev/null 2>&1
